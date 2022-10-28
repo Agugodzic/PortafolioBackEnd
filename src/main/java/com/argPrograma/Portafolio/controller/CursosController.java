@@ -10,7 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/cursos")
-@CrossOrigin("portafolio-frontend-f5c86.firebaseapp.com")
+@CrossOrigin("https://portafolio-frontend-f5c86.web.app/")
 public class CursosController {
     private final CursosService cursosService;
     public CursosController(CursosService cursosService){

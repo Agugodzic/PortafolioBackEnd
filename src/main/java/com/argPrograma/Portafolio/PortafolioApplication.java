@@ -27,7 +27,7 @@ public class PortafolioApplication {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
 
-				registry.addMapping("/**").allowedOrigins("*");
+				registry.addMapping("/**").allowedOrigins("https://portafolio-frontend-f5c86.web.app/");
 			}
 		};
 	}
