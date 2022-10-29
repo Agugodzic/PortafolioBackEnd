@@ -10,7 +10,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/experiencia")
-@CrossOrigin("https://portafolio-frontend-f5c86.web.app")
 public class ExperienciaController {
     private final ExperienciaService experienciaService;
 
