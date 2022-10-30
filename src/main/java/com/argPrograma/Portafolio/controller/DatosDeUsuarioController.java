@@ -10,7 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/datos")
-@CrossOrigin("https://portafolio-frontend-f5c86.web.app")
+@CrossOrigin("**")
 public class DatosDeUsuarioController {
     private final DatosDeUsuarioService datosDeUsuarioService;
 

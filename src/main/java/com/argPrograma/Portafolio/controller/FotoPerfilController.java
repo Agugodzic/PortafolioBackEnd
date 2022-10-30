@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/foto-perfil")
-@CrossOrigin("https://portafolio-frontend-f5c86.web.app")
+@CrossOrigin("**")
 public class FotoPerfilController {
     private final FotoPerfilService fotoPerfilService;
     public FotoPerfilController(FotoPerfilService fotoPerfilService){
