@@ -10,6 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/info")
+@CrossOrigin("http://portafolio-frontend-f5c86.web.app")
 public class InfoController {
 
     private final InfoService infoService;

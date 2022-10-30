@@ -10,6 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/titulo-secundario")
+@CrossOrigin("http://portafolio-frontend-f5c86.web.app")
 public class TituloSecundarioController {
     private final TituloSecundarioService tituloSecundarioService;
     public TituloSecundarioController(TituloSecundarioService tituloSecundarioService){

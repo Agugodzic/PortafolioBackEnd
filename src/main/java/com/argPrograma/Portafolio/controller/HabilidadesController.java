@@ -12,6 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/habilidades")
+@CrossOrigin("http://portafolio-frontend-f5c86.web.app")
 public class HabilidadesController {
     private final HabilidadesService habilidadesService;
 
