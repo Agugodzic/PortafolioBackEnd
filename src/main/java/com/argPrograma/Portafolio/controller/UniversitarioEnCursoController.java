@@ -10,7 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/universitario-en-curso")
-@CrossOrigin("http://localhost:4200")
+@CrossOrigin("https://portafolio-frontend-f5c86.web.app")
 public class UniversitarioEnCursoController {
     private final UniversitarioEnCursoService universitarioEnCursoService;
     public UniversitarioEnCursoController(UniversitarioEnCursoService universitarioEnCursoService){
