@@ -11,7 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("proyectos")
-@CrossOrigin("https://portafolio-frontend-f5c86.web.app")
+@CrossOrigin("http://localhost:4200")
 public class ProyectosController {
     private final ProyectosService proyectosService;
 
