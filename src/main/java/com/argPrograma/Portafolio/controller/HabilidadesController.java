@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins ="http://localhost:4200")
 @RequestMapping("/habilidades")
 public class HabilidadesController {
     private final HabilidadesService habilidadesService;
