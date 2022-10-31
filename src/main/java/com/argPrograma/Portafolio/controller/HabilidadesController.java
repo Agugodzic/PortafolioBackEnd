@@ -12,7 +12,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/habilidades")
-@CrossOrigin("**")
 public class HabilidadesController {
     private final HabilidadesService habilidadesService;
 

@@ -27,7 +27,7 @@ public class PortafolioApplication {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
 
-				registry.addMapping("/**").allowedOrigins("**");
+				registry.addMapping("/**").allowedOrigins("http://localhost:4200");
 			}
 		};
 	}
@@ -35,7 +35,7 @@ public class PortafolioApplication {
 	public CorsFilter corsFilter() {
 		CorsConfiguration corsConfiguration = new CorsConfiguration();
 		corsConfiguration.setAllowCredentials(true);
-		corsConfiguration.setAllowedOrigins(Arrays.asList("**"));
+		corsConfiguration.setAllowedOrigins(Arrays.asList("http://localhost:4200"));
 
 		corsConfiguration.setAllowedHeaders(Arrays.asList("Origin", "Access-Control-Allow-Origin", "Content-Type",
 				"Accept", "Authorization", "Origin, Accept", "X-Requested-With",

@@ -10,7 +10,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/titulo-secundario")
-@CrossOrigin("**")
 public class TituloSecundarioController {
     private final TituloSecundarioService tituloSecundarioService;
     public TituloSecundarioController(TituloSecundarioService tituloSecundarioService){
