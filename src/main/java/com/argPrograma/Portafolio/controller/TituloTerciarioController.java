@@ -13,6 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/titulo-terciario")
+@CrossOrigin("https://portafolio-frontend-f5c86.web.app")
 public class TituloTerciarioController {
     private final TituloTerciarioService tituloTerciarioService;
     public TituloTerciarioController(TituloTerciarioService tituloTerciarioService){
