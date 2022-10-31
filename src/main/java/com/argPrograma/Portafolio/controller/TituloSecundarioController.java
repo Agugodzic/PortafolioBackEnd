@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins ="http://localhost:4200")
 @RequestMapping("/titulo-secundario")
 public class TituloSecundarioController {
     private final TituloSecundarioService tituloSecundarioService;
