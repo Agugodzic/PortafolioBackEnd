@@ -1,10 +1,7 @@
 package com.argPrograma.Portafolio.controller;
 
-import com.argPrograma.Portafolio.model.TituloSecundario;
 import com.argPrograma.Portafolio.model.TituloTerciario;
-import com.argPrograma.Portafolio.model.TituloUniversitario;
 import com.argPrograma.Portafolio.services.TituloTerciarioService;
-import com.argPrograma.Portafolio.services.TituloUniversitarioService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
