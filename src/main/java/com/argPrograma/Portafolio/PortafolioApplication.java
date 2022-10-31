@@ -27,7 +27,7 @@ public class PortafolioApplication {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
 
-				registry.addMapping("/**").allowedOrigins("https://portafolio-frontend-f5c86.web.app");
+				registry.addMapping("/**").allowedOrigins("https://portafolio-frontend-f5c86.firebaseapp.com");
 			}
 		};
 	}
@@ -35,7 +35,7 @@ public class PortafolioApplication {
 	public CorsFilter corsFilter() {
 		CorsConfiguration corsConfiguration = new CorsConfiguration();
 		corsConfiguration.setAllowCredentials(true);
-		corsConfiguration.setAllowedOrigins(Arrays.asList("https://portafolio-frontend-f5c86.web.app","http://localhost:4200"));
+		corsConfiguration.setAllowedOrigins(Arrays.asList("https://portafolio-frontend-f5c86.firebaseapp.com","http://localhost:4200"));
 
 		corsConfiguration.setAllowedHeaders(Arrays.asList("Origin", "Access-Control-Allow-Origin", "Content-Type",
 				"Accept", "Authorization", "Origin, Accept", "X-Requested-With",
