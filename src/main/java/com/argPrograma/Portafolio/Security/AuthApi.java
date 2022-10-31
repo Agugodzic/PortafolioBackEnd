@@ -23,7 +23,6 @@ public class AuthApi {
     @Autowired
     JwtTokenUtil jwtTokenUtil;
     @PostMapping("/login")
-    @CrossOrigin("https://portafolio-frontend-f5c86.web.app")
     public ResponseEntity<?> login(@RequestBody @Valid AuthRequest request){
         try{
             Authentication authentication = authManager.authenticate(
