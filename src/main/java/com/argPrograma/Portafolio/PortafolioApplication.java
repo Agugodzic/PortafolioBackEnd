@@ -19,11 +19,23 @@ public class PortafolioApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(PortafolioApplication.class, args);
 	}
+
+	@Bean
+	public WebMvcConfigurer corsConfigurer() {
+		return new WebMvcConfigurer() {
+
+			@Override
+			public void addCorsMappings(CorsRegistry registry) {
+
+				registry.addMapping("/**").allowedOrigins("http://portafolio-frontend-f5c86.web.app");
+			}
+		};
+	}
 	@Bean
 	public CorsFilter corsFilter() {
 		CorsConfiguration corsConfiguration = new CorsConfiguration();
 		corsConfiguration.setAllowCredentials(true);
-		corsConfiguration.setAllowedOrigins(Arrays.asList("http://portafolio-frontend-f5c86.web.app","http://localhost:4200"));
+		corsConfiguration.setAllowedOrigins(Arrays.asList("https://portafolio-frontend-f5c86.web.app","http://localhost:4200"));
 
 		corsConfiguration.setAllowedHeaders(Arrays.asList("Origin", "Access-Control-Allow-Origin", "Content-Type",
 				"Accept", "Authorization", "Origin, Accept", "X-Requested-With",
