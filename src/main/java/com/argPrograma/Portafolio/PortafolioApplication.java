@@ -19,18 +19,6 @@ public class PortafolioApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(PortafolioApplication.class, args);
 	}
-
-	@Bean
-	public WebMvcConfigurer corsConfigurer() {
-		return new WebMvcConfigurer() {
-
-			@Override
-			public void addCorsMappings(CorsRegistry registry) {
-
-				registry.addMapping("/**").allowedOrigins("http://portafolio-frontend-f5c86.web.app");
-			}
-		};
-	}
 	@Bean
 	public CorsFilter corsFilter() {
 		CorsConfiguration corsConfiguration = new CorsConfiguration();
